@@ -2,7 +2,7 @@
 <div class="page-apply">
 
   <header class="site-header">
-    <menus :extraHeader="true" :title="title" :content="content"  />
+    <menus :extraHeader="true" :title="title"  />
   </header>
  <section class="content">
     <div class="row column medium-10 large-7 xlarge-5">

@@ -3,11 +3,11 @@
     <div class="row column">
       <nav class="footer-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="unicorns.html">Meet the Unicorns</a></li>
-          <li><a href="investors.html">Investors & Board of Directors</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="apply.html">Apply</a></li>
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="unicorns">Meet the Unicorns</router-link></li>
+          <li><router-link to="investors">Investors & Board of Directors</router-link></li>
+          <li><router-link to="faq">FAQ</router-link></li>
+          <li><router-link to="apply">Apply</router-link></li>
         </ul>
       </nav>
     </div>
