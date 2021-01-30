@@ -48,7 +48,7 @@
 
   <section class="home-sign-up">
     <div class="row column">
-      <img class="icon-w" src="images/wr-home-W.png">
+      <img class="icon-w" src="images/wr-home-f.png">
 
       <form onsubmit="void(0);">
         <input type="email" placeholder="Enter your email address">
