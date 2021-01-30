@@ -1,9 +1,9 @@
 <template>
   <div class="page-investors">
       <div class="top-section">
-          
+
             <menus :extraHeader="true" :title="title" :content="content" :logoColor="'dark'"  />
-         
+
           <div class="investors-list">
                 <div class="row">
                   <div class="columns large-4">
@@ -46,7 +46,7 @@
             <div class="intro block">
               <h2 class="title">Our Board of Directors</h2>
               <p class="content">
-                Wild Rydes has a talented Board of Directors which advises the company on strategy and enabling business success. Using its collective leadership intangibles, the Board works with Wild Rydes to ideate solutions and form audacious ideas to the company’s most pressing business challenges. The Board and the Company work together to make informed problem solving decisions using process optimization and agile decision making techniques.
+                Fluffy Rydes has a talented Board of Directors which advises the company on strategy and enabling business success. Using its collective leadership intangibles, the Board works with Fluffy Rydes to ideate solutions and form audacious ideas to the company’s most pressing business challenges. The Board and the Company work together to make informed problem solving decisions using process optimization and agile decision making techniques.
               </p>
             </div>
           </div>

@@ -1,14 +1,14 @@
 <template>
 <div class="page-unicorns">
-    
+
     <menus class="site-header" :extraHeader="true" :title="title" :logoColor="'dark'"  />
 
  <div class="row column medium-10 large-8 xxlarge-6">
     <p class="content">
-      Wild Rydes has a dedicated staff that recruits, trains, and tends to our herd of unicorns. We take great pride in the quality of unicorns and rydes that we provide to our customers, and our staff exercises the utmost care in vetting the unicorns that join our herd.
+      Fluffy Rydes has a dedicated staff that recruits, trains, and tends to our herd of unicorns. We take great pride in the quality of unicorns and rydes that we provide to our customers, and our staff exercises the utmost care in vetting the unicorns that join our herd.
     </p>
     <p class="content">
-      Every unicorn goes through a rigorous due diligence process where we perform background checks, flying exams, and several rounds of interviews. Unicorns accepted to Wild Rydes are then treated to the best care and maintenance possible. We provide them excellent benefits, health care, and employee perks. This is part of our company philosophy in which happy unicorns lead to happy customers.
+      Every unicorn goes through a rigorous due diligence process where we perform background checks, flying exams, and several rounds of interviews. Unicorns accepted to Fluffy Rydes are then treated to the best care and maintenance possible. We provide them excellent benefits, health care, and employee perks. This is part of our company philosophy in which happy unicorns lead to happy customers.
     </p>
     <p class="content">Meet a few of the unicorns that are part of our family.</p>
   </div>
@@ -25,7 +25,7 @@
           <h2 class="title">Bucephalus</h2>
           <div class="subtitle">Golden Swiss</div>
           <p class="content">
-            Bucephalus joined Wild Rydes in February 2016 and has been giving rydes almost daily. He says he most enjoys getting to know each of his ryders, which makes the job more interesting for him. In his spare time, Bucephalus enjoys watching sunsets and playing Pokemon Go.
+            Bucephalus joined Fluffy Rydes in February 2016 and has been giving rydes almost daily. He says he most enjoys getting to know each of his ryders, which makes the job more interesting for him. In his spare time, Bucephalus enjoys watching sunsets and playing Pokemon Go.
           </p>
         </div>
       </div>
@@ -41,7 +41,7 @@
           <h2 class="title">Shadowfox</h2>
           <div class="subtitle">Brown Jersey</div>
           <p class="content">
-            Shadowfox joined Wild Rydes after completing a distinguished career in the military, where he toured the world in many critical missions. Shadowfox enjoys impressing his ryders with magic tricks that he learned from his previous owner.
+            Shadowfox joined Fluffy Rydes after completing a distinguished career in the military, where he toured the world in many critical missions. Shadowfox enjoys impressing his ryders with magic tricks that he learned from his previous owner.
           </p>
         </div>
       </div>
@@ -57,7 +57,7 @@
           <h2 class="title">Rocinante</h2>
           <div class="subtitle">Baby Flying Yellowback</div>
           <p class="content">
-            Rocinante recently joined the Wild Rydes team in Madrid, Spain. She was instrumental in forming Wild Rydes’ Spanish operations after a long, distinguished acting career in windmill shadow-jousting.
+            Rocinante recently joined the Fluffy Rydes team in Madrid, Spain. She was instrumental in forming Fluffy Rydes’ Spanish operations after a long, distinguished acting career in windmill shadow-jousting.
           </p>
         </div>
       </div>

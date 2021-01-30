@@ -13,7 +13,7 @@
     </div>
     <div class="row column">
       <div class="footer-legal">
-        &copy;WildRydes Inc<br>
+        &copy;FluffyRydes Inc<br>
         All Rights Reserved
       </div>
     </div>

@@ -2,7 +2,7 @@
     <header >
 
         <div v-if="extraHeader">
-            <div class="site-logo" :class="logoColor" >Wild Rydes  </div>
+            <div class="site-logo" :class="logoColor" >Fluffy Rydes  </div>
 
             <div class="row column medium-8 large-6 xlarge-5 xxlarge-4">
             <h1 class="">{{title}}</h1>
@@ -12,7 +12,7 @@
             </div>
         </div>
 
-        <h1  v-show="showTitle" class="title">Wild Rydes</h1>
+        <h1  v-show="showTitle" class="title">Fluffy Rydes</h1>
         <nav  id="nav"  v-show="isOpen" class="site-nav">
             <ul>
                 <li><router-link to="/">Home</router-link></li>
