@@ -2,9 +2,9 @@
 
 <template>
   <div class="home">
-   
+
       <menus class="site-header" showTitle="true" />
-    
+
   <section class="home-about">
     <div class="row column large-9 xlarge-6 xxlarge-4">
       <h2 class="section-title">How Does This Work?</h2>
@@ -13,14 +13,7 @@
       </p>
     </div>
 
-    <div class="row medium-up-2 large-up-4">
-      <div class="column">
-        <div class="home-about-block">
-          <h3 class="title icon-download">Download The App</h3>
-          <p class="content">Head over to the app store and download the Wild Rydes app. You’re just a few taps away from getting your ryde.</p>
-        </div>
-      </div>
-
+    <div class="row medium-up-3 large-up-3">
       <div class="column">
         <div class="home-about-block">
           <h3 class="title icon-unicorn">Request A Unicorn</h3>
@@ -57,21 +50,14 @@
     <div class="row column">
       <img class="icon-w" src="images/wr-home-W.png">
 
-      <form onsubmit="javascript:void(0);">
+      <form onsubmit="void(0);">
         <input type="email" placeholder="Enter your email address">
         <button type="button">Submit</button>
       </form>
 
       <h2 class="section-title">Sign Up</h2>
 
-      <p class="content">Wild Rydes is coming soon! Enter your email to enter the limited private beta</p>
-
-      <div class="apps">
-        <a class="app-icon" href=""><img src="images/wr-home-apple.png"></a>
-        <a class="app-icon" href=""><img src="images/wr-home-google.png"></a>
-        <a class="app-icon" href=""><img src="images/wr-home-blackberry.png"></a>
-        <a class="app-icon" href=""><img src="images/wr-home-Xiaomi.png"></a>
-      </div>
+      <p class="content">Fluffy news are coming soon! Enter your email to be the first to know about new features</p>
 
       <div class="social">
         <a class="icon-fb" href="">Facebook</a>
