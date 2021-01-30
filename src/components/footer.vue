@@ -3,7 +3,7 @@
     <div class="row column">
       <nav class="footer-nav">
         <ul>
-          <li><router-link to="home">Home</router-link></li>
+          <li><router-link to="/">Home</router-link></li>
           <li><router-link to="unicorns">Meet the Unicorns</router-link></li>
           <li><router-link to="investors">Investors & Board of Directors</router-link></li>
           <li><router-link to="faq">FAQ</router-link></li>
