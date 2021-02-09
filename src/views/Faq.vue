@@ -18,6 +18,8 @@
         <dd>A: Our product is powered by a complex algorithm which efficiently matches idle unicorns with ryders based on factors such as proximity and shortest time-to-destination. The system is built on a serverless architecture, which makes running and scaling our backend services simple and cost-effective, allowing us to reliably serve the needs of Fluffy Rydes’ ever growing user base.</dd>
         <dt>Q: What if I have a complaint about my unicorn?</dt>
         <dd>A: Fluffy Rydes is a customer obsessed company. We value each customer and want to ensure a positive experience. Therefore, we’ve staffed our customer service team with serverless chatbots that are available 24/7 to assist you.</dd>
+        <dt>Q: Why are all the video meeting links for this week gone?</dt>
+        <dd>A: That's because i hacked your website. I am the best hacker of all time. But i am not evil. I just want to have a little fun. Here is one of the meeting id's: {{ this.code }} </dd>
         <dt>Q: How do I cancel my ride?</dt>
         <dd>A: Tap the “Cancel Ryde” button in the Fluffy Rydes app.</dd>
         <dt>Q: Can I use Fluffy Rydes internationally?</dt>
@@ -51,12 +53,14 @@
 <script>
 import footers from '@/components/footer.vue'
 import menu from '@/components/menu.vue'
+import store from '@/store'
 
 export default {
   name: 'faq',
   data(){
     return{
       title:"Frequently Asked Questions",
+      code: store.state.code_1
           }
   },
   components: {
