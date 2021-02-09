@@ -7,9 +7,20 @@
 
   <section class="home-about">
     <div class="row column large-9 xlarge-6 xxlarge-4">
+      <h2 class="section-title">Departures near you</h2>
+      <itinerary></itinerary>
+    </div>
+
+    <div class="row column large-9 xlarge-6 xxlarge-4">
       <h2 class="section-title">How Does This Work?</h2>
       <p class="content">
-        In today’s fast paced world, you’ve got places you need to be but not enough time in your jam packed schedule. Wouldn’t it be nice if there were a transportation service that changed the way you get around daily? Introducing Fluffy Rydes, an innovative transportation service that helps people get to their destination faster and hassle-free. Getting started is as easy as tapping a button in our app.
+        In today’s fast paced world, you’ve got places you need to be but not enough time in your jam packed schedule.
+        Wouldn’t it be nice if there were a transportation service that changed the way you get around daily?
+        Introducing Fluffy Rydes, an innovative transportation service that helps people get to their destination faster and hassle-free.
+        <span style="color: deepskyblue; font-weight: bold">
+          Getting started is as easy as entering a meeting ID into one of the departure inputs above.
+          Hit enter, and if your ID is correct a link to unlock your unicorn will be provided.
+        </span>
       </p>
     </div>
 
@@ -104,12 +115,14 @@
 // @ is an alias to /src
 import footers from '@/components/footer.vue'
 import menu from '@/components/menu.vue'
+import itinerary from "@/components/itinerary";
 
 export default {
   name: 'home',
   components: {
     footers: footers,
-    menus: menu
+    menus: menu,
+    itinerary
   },
 }
 
