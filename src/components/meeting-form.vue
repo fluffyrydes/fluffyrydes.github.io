@@ -1,0 +1,88 @@
+<template>
+  <label>
+    <span class="time blink">{{ meeting.time }}</span>
+    <span class="destination">{{ meeting.label }}</span>
+    <input class="meeting" v-if="!isCorrect" type="text" :placeholder="placeholder" v-model.lazy.trim="input">
+    <button class="meeting meeting-button" v-else v-on:click="openMeeting">
+      <span>🏁 Take me there 🏁</span>
+    </button>
+  </label>
+</template>
+
+<script>
+export default {
+  name: "meeting-form",
+  props: ["meeting"],
+  data() {
+    return {
+      input: ""
+    }
+  },
+  computed: {
+    teamsLink: function () {
+      // return "https://teams.microsoft.com/l/meetup-join/19%3ameeting_" + this.meeting.id + "m%40thread.v2"
+      return "https://www.google.com"
+    },
+    isCorrect: function () {
+      return this.input === this.meeting.id
+    },
+    placeholder: function () {
+      return "Meeting ID: " + this.meeting.id.slice(0, 8) + "🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄"
+    }
+  },
+  methods: {
+    openMeeting: function () {
+      console.log(this.teamsLink)
+      window.open(this.teamsLink)
+    }
+  }
+}
+</script>
+
+<style scoped>
+.meeting {
+  background: #333;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  height: 3.4375rem;
+  padding: 1.875rem;
+  margin: 0.75rem;
+  outline: none;
+  width: 100%;
+  color: #fff;
+}
+
+.meeting-button {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(#4c5158, #333333);
+  box-shadow: 1px 1px 1px 0 #000000;
+  line-height: 0;
+}
+
+.meeting-button:hover {
+  border: solid black 1px;
+  background: #333333;
+  background: linear-gradient(#46464a, #333333);
+}
+label .destination {
+  font-weight: bold;
+}
+
+label .time {
+  color: deepskyblue;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.blink {
+  animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+</style>
