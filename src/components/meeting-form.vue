@@ -2,7 +2,7 @@
   <label>
     <span class="time blink">{{ meeting.time }}</span>
     <span class="destination">{{ meeting.label }}</span>
-    <input class="meeting" v-if="!isCorrect" type="text" :placeholder="placeholder" v-model.lazy.trim="input">
+    <input class="meeting" v-if="!isCorrect" type="text" :placeholder="placeholder" v-model.trim="input">
     <button class="meeting meeting-button" v-else v-on:click="openMeeting">
       <span>🏁 Take me there 🏁</span>
     </button>
@@ -57,7 +57,7 @@ export default {
   font-weight: 700;
   text-transform: uppercase;
   background: linear-gradient(#4c5158, #333333);
-  box-shadow: 1px 1px 1px 0 #000000;
+  box-shadow: 1px 1px 1px 0 #4c5158;
   line-height: 0;
 }
 
