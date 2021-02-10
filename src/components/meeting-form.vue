@@ -19,19 +19,19 @@ export default {
     }
   },
   computed: {
-    teamsLink: function () {
+    teamsLink () {
       // return "https://teams.microsoft.com/l/meetup-join/19%3ameeting_" + this.meeting.id + "m%40thread.v2"
       return "https://www.google.com"
     },
-    isCorrect: function () {
+    isCorrect () {
       return this.input === this.meeting.id
     },
-    placeholder: function () {
+    placeholder () {
       return "Meeting ID: " + this.meeting.id.slice(0, 8) + "🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄"
     }
   },
   methods: {
-    openMeeting: function () {
+    openMeeting () {
       console.log(this.teamsLink)
       window.open(this.teamsLink)
     }
