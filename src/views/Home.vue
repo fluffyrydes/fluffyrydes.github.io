@@ -19,7 +19,7 @@
         Introducing Fluffy Rydes, an innovative transportation service that helps people get to their destination faster and hassle-free.
         <span style="color: deepskyblue; font-weight: bold">
           Getting started is as easy as entering a meeting ID into one of the departure inputs above.
-          Hit enter, and if your ID is correct a link to unlock your unicorn will be provided.
+          If your ID is correct a link to unlock your unicorn will magically appear.
         </span>
       </p>
     </div>
