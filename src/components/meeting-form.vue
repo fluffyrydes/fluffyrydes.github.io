@@ -21,7 +21,7 @@ export default {
   computed: {
     teamsLink () {
       // return "https://teams.microsoft.com/l/meetup-join/19%3ameeting_" + this.meeting.id + "m%40thread.v2"
-      return "https://www.google.com"
+      return "https://www.google.com" // TODO: replace with teams link
     },
     isCorrect () {
       return this.input === this.meeting.id

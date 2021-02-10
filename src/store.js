@@ -8,7 +8,7 @@ export default new Vuex.Store({
     meetings: [
       {
         label: "Ryde to more professional charisma",
-        id: "ZpE3MDVhZjYtZmUxMC00OTgyLWIwNGUtNzRjNzZjZWE1OGF",
+        id: "ZpE3MDVhZjYtZmUxMC00OTgyLWIwNGUtNzRjNzZjZWE1OGF", // TODO: real IDs
         input: "",
         time: "17.45",
       },
