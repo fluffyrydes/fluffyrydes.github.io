@@ -25,20 +25,35 @@
         <div :class="menuStatus">
             <button @click='toggle()' type="button" class="btn-menu"><span>Menu</span></button>
         </div>
-        <button v-show="showTitle" class="home-button">Giddy Up!</button>
+        <button v-show="showTitle" class="home-button" @click="showModal = true">Giddy Up!</button>
+        <modal v-if="showModal" @close="showModal = false">
+          <template v-slot:header>
+            <h3>🎉 Congratulations 🎉</h3>
+          </template>
+          <template v-slot:body>
+            You found a meeting ID! Make sure to enter it into the right input to retrieve a link to your meeting:
+            {{ meetings[0].id }}
+          </template>
+        </modal>
     </header>
 </template>
 
 <script>
+import {mapState} from "vuex";
+import Modal from "@/components/modal";
+
 export default {
   name: 'menu',
+  components: {Modal},
   props: ['showTitle','extraHeader','title', 'content','logoColor'],
   data () {
       return {
             isOpen: false,
             menuStatus:'',
+            showModal: false
       }
     },
+  computed: mapState(['meetings']),
   methods: {
     toggle: function () {
        this.isOpen = !this.isOpen
