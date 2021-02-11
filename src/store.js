@@ -8,19 +8,19 @@ export default new Vuex.Store({
     meetings: [
       {
         label: "Ryde to more professional charisma",
-        id: "ZpE3MDVhZjYtZmUxMC00OTgyLWIwNGUtNzRjNzZjZWE1OGF", // TODO: real IDs
+        id: "ZTFjNzA3ZTgtOWVjYy00NDY0LTk3ZDItM2IwMWQ3ZDNmZDg5",
         input: "",
         time: "17.45",
       },
       {
         label: "Ryde to your next assignment",
-        id: "ZjEoMDVhZjYtZmUxMC00OTgyLWIwNGUtNzRjNzZjZWE1OGF",
+        id: "YmVhZTlhZTQtZmYwOS00MjRhLWE0MDYtOTlkOTI4ZThkNDky",
         input: "",
         time: "18.15",
       },
       {
         label: "Ryde to feedback land",
-        id: "ZjE3MDVhZjYtZmUxMC00OTgyLWIwNGUtNzRjNzZjZWE1OGF",
+        id: "ZjViMWJhOGYtZjJiMS00M2E4LTk1NzMtMGNlNmRhMGM3ZDcw",
         input: "",
         time: "19.00",
       },
