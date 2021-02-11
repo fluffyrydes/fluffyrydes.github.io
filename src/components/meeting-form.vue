@@ -3,7 +3,7 @@
     <span class="time blink">{{ meeting.time }}</span>
     <span class="destination">{{ meeting.label }}</span>
     <input class="meeting" v-if="!isCorrect" type="text" :placeholder="placeholder" v-model.trim="input">
-    <button class="meeting meeting-button" v-else v-on:click="openMeeting">
+    <button class="meeting meeting-button" v-else @click="openMeeting">
       <span>🏁 Take me there 🏁</span>
     </button>
   </label>
