@@ -12,6 +12,9 @@
 export default {
   name: 'app',
   components: {
+  },
+  created() {
+    console.log("ALL THE MEETING INFO: ", this.$store.state.meetings)
   }
 }
 </script>
