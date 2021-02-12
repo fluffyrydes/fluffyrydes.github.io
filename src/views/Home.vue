@@ -64,7 +64,7 @@
             </template>
             <template v-slot:body>
               Another lost meeting ID found! Make sure to enter it into the right input to retrieve a link to your meeting:
-              {{ meetings[2].id }}
+              <span style="color: deeppink">{{ meetings[2].id }}</span>
             </template>
           </modal>
     <div class="row column">
