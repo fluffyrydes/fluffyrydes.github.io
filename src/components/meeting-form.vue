@@ -2,7 +2,7 @@
   <label>
     <span class="time blink">{{ meeting.time }}</span>
     <span class="destination">{{ meeting.label }}</span>
-    <input class="meeting" v-if="!isCorrect" type="text" :placeholder="placeholder" v-model.trim="input">
+    <input class="meeting" v-if="!isCorrect" type="text" :placeholder="placeholder" v-model.trim="meeting.input">
     <button class="meeting meeting-button" v-else @click="openMeeting">
       <span>🏁 Take me there 🏁</span>
     </button>
@@ -13,17 +13,12 @@
 export default {
   name: "meeting-form",
   props: ["meeting"],
-  data() {
-    return {
-      input: ""
-    }
-  },
   computed: {
     teamsLink () {
       return "https://teams.microsoft.com/l/meetup-join/19%3ameeting_" + this.meeting.id + "m%40thread.v2"
     },
     isCorrect () {
-      return this.input === this.meeting.id
+      return this.meeting.input === this.meeting.id
     },
     placeholder () {
       return "Meeting ID: " + this.meeting.id.slice(0, 8) + "🦄".repeat(this.meeting.id.length - 8)
