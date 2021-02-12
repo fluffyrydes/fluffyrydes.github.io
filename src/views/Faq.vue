@@ -29,7 +29,7 @@
         <dt>Q: What if I lose an item during my ryde?</dt>
         <dd>A: Unfortunately, it’s unlikely we can retrieve your lost item if it has fallen off the unicorn during your ryde.</dd>
         <dt>Q: Where are all the meeting links?</dt>
-        <dd>A: Hello. My hackername is scriptkiddie666. I hacked your website and scattered the id's across the site. Mhhahaaha. Here is one of the meeting id's for free: {{ this.code }} Continue browsing to find the rest!</dd>
+        <dd>A: Hello. My hackername is scriptkiddie666. I hacked your website and scattered the id's across the site. Mhhahaaha. Here is one of the meeting id's for free: {{ meetingId }} Continue browsing to find the rest!</dd>
         <dt>Q: How do I share my route information with someone else?</dt>
         <dd>A: During your ryde, you can share your route and ETA with someone else using the Fluffy Rydes app. Simply tap the “Share Route” button and select a contact. Soon, they’ll be able to watch the status of your ryde.</dd>
         <dt>Q: How do I rate my unicorn?</dt>
@@ -53,15 +53,16 @@
 <script>
 import footers from '@/components/footer.vue'
 import menu from '@/components/menu.vue'
-import store from '@/store'
 
 export default {
   name: 'faq',
   data(){
-    return{
+    return {
       title:"Frequently Asked Questions",
-       code: store.state.meetings[1].id
-          }
+    }
+  },
+  computed: {
+    meetingId: this.$store.state.meetings[1].id
   },
   components: {
     footers: footers,
