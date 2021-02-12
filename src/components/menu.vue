@@ -32,7 +32,7 @@
           </template>
           <template v-slot:body>
             You found a meeting ID! Make sure to enter it into the right input to retrieve a link to your meeting:
-            {{ meetings[0].id }}
+            <span style="color: deeppink">{{ meetings[0].id }}</span>
           </template>
         </modal>
     </header>
