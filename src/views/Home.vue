@@ -11,7 +11,7 @@
       <itinerary></itinerary>
     </div>
 
-    <div class="row column medium-8 large-8 xlarge-7 xxlarge-7"">
+    <div class="row column medium-8 large-8 xlarge-7 xxlarge-7">
       <h2 class="section-title">How Does This Work?</h2>
       <p class="content">
         In today’s fast paced world, you’ve got places you need to be but not enough time in your jam packed schedule.
