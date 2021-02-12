@@ -58,12 +58,21 @@
   </section>
 
   <section class="home-sign-up">
+    <modal v-if="showModal" @close="showModal = false">
+            <template v-slot:header>
+              <h3>🎉 Nice! 🎉</h3>
+            </template>
+            <template v-slot:body>
+              Another lost meeting ID found! Make sure to enter it into the right input to retrieve a link to your meeting:
+              {{ meetings[2].id }}
+            </template>
+          </modal>
     <div class="row column">
       <img class="icon-w" src="images/wr-home-f.png">
 
-      <form onsubmit="void(0);">
+      <form onsubmit="showModal = true;">
         <input type="email" placeholder="Enter your email address">
-        <button type="button">Submit</button>
+        <button type="button" @click="showModal = true">Submit</button>
       </form>
 
       <h2 class="section-title">Sign Up</h2>
@@ -116,14 +125,23 @@
 import footers from '@/components/footer.vue'
 import menu from '@/components/menu.vue'
 import itinerary from "@/components/itinerary";
+import Modal from "@/components/modal";
+import {mapState} from "vuex";
 
 export default {
   name: 'home',
   components: {
     footers: footers,
     menus: menu,
-    itinerary
+    itinerary,
+    Modal
   },
+  data () {
+    return {
+      showModal: false
+    }
+  },
+  computed: mapState(['meetings'])
 }
 
 </script>
