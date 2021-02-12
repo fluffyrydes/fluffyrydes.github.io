@@ -20,13 +20,13 @@ export default {
   },
   computed: {
     teamsLink () {
-      return `https://teams.microsoft.com/l/meetup-join/19%3ameeting_{this.meeting.id}m%40thread.v2/`
+      return "https://teams.microsoft.com/l/meetup-join/19%3ameeting_" + this.meeting.id + "m%40thread.v2"
     },
     isCorrect () {
       return this.input === this.meeting.id
     },
     placeholder () {
-      return "Meeting ID: " + this.meeting.id.slice(0, 8) + "🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄"
+      return "Meeting ID: " + this.meeting.id.slice(0, 8) + "🦄".repeat(this.meeting.id.length - 8)
     }
   },
   methods: {
