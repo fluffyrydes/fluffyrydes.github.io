@@ -54,8 +54,8 @@ export default {
 }
 
 .modal-container {
-  width: 700px;
-  margin: 0px auto;
+  z-index: 9999;
+  margin: 0px 10rem;
   padding: 20px 30px;
   background-color: #ffffff;
   border-radius: 20px;
@@ -66,7 +66,7 @@ export default {
 
 .modal-header {
   text-align: center;
-  color: #f50856;
+  color: deeppink;
 }
 
 .modal-body {
