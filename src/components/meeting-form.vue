@@ -1,7 +1,6 @@
 <template>
   <label>
-    <span class="time blink">{{ meeting.time }}</span>
-    <span class="destination">{{ meeting.label }}</span>
+    <span class="destination blink">{{ meeting.label }}</span>
     <input class="meeting" v-if="!isCorrect" type="text" :placeholder="placeholder" v-model.trim="meeting.input">
     <button class="meeting meeting-button" v-else @click="openMeeting">
       <span>🏁 Take me there 🏁</span>
@@ -60,18 +59,15 @@ export default {
   background: #333333;
   background: linear-gradient(#46464a, #333333);
 }
-label .destination {
-  font-weight: bold;
-}
 
-label .time {
+label .destination {
   color: deepskyblue;
   font-weight: bold;
   margin-right: 10px;
 }
 
 .blink {
-  animation: blinker 0.5s linear infinite;
+  animation: blinker 1.5s linear infinite;
 }
 
 @keyframes blinker {
