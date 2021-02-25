@@ -14,7 +14,7 @@ export default {
   props: ["meeting"],
   computed: {
     teamsLink () {
-      return "https://teams.microsoft.com/l/meetup-join/19%3ameeting_" + this.meeting.id + "m%40thread.v2/"
+      return "https://teams.microsoft.com/l/meetup-join/19%3ameeting_" + this.meeting.id + "m%40thread.v2/0?context=" + this.context
     },
     isCorrect () {
       return this.meeting.input === this.meeting.id
